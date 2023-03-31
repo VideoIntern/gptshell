@@ -22,7 +22,7 @@ Proxy on
 
 ## Note  
 
-Remeber to use ctrl+backspace to replace backspace.
+Remember to use ctrl+backspace to replace backspace.
 
 ## Acknowledgement  
 
