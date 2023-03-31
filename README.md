@@ -1,3 +1,5 @@
+# GPTSHELL #  
+
 A python-based OpenAI client for terminal.
 
 ## Usage  
