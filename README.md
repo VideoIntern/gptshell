@@ -14,6 +14,10 @@ Paste your SK on the **openai_api_key_store** variable to avoid duplicated initi
 
 ### Step 3. ###
 
+proxy_on
+
+### Step 4. ###
+
 `python gptshell.py` 
 
 ## Acknowledgement  
