@@ -14,11 +14,15 @@ Paste your SK on the **openai_api_key_store** variable to avoid duplicated initi
 
 ### Step 3. ###
 
-proxy_on
+Proxy on
 
 ### Step 4. ###
 
 `python gptshell.py` 
+
+## Note  
+
+Remeber to use ctrl+backspace to replace backspace.
 
 ## Acknowledgement  
 
