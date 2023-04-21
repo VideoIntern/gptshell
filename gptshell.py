@@ -25,6 +25,9 @@ class Chat:
             else:
                 print(f"\U0001f47D: {msg['content']}\n")
 
+    def clear_context(self,):
+        self.conversation_list = []
+
     # prompt
     def ask(self, prompt):
         self.conversation_list.append({"role":"user", "content":prompt})
@@ -114,6 +117,9 @@ if __name__=="__main__":
         try:
             openai_model = openai_model_dict[model_select]
             print(f"Initialized Model Version {openai_model}")
+            print("="*150)
+            print("Warning! Input \"clear\" to clear chat history. Remeber to use this command to save money if contextual information are currently unnecessary.")
+            print("="*150)
         except:
             raise NotImplementedError(f"Unsupported Choice {model_select}!")
         bot = Chat(openai_model) 
@@ -121,6 +127,9 @@ if __name__=="__main__":
             interact = input(f"[{openai_model}]╼> ")
             if interact == "exit":
                 exit()
+            elif interact == "clear":
+                print(f"Chat history successfully cleared!")
+                bot.clear_context()
             else:
                 bot.ask(interact)
     else:

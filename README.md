@@ -22,7 +22,9 @@ Proxy on
 
 ## Note  
 
-Remember to use ctrl+backspace to replace backspace.
+- Remember to use ctrl+backspace to replace backspace.
+
+- Use `clear` command to clear chat history if contextual information is currently unnecessary. This command could save tons of tokens.  
 
 ## Acknowledgement  
 
