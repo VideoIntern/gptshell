@@ -9,6 +9,8 @@ except ModuleNotFoundError:
 
 openai_api_key_store = ""             # put SK here to avoid duplicated initialize 
 openai_model_dict = {'a': "gpt-4", 'b': "gpt-3.5-turbo", 'c': "gpt-4-0314", 'd': "gpt-3.5-turbo-0301"}
+openai.api_base = 'https://closeai.deno.dev/v1'
+
 
 class Chat:
     def __init__(self, openai_model, conversation_list=[]) -> None:
@@ -118,7 +120,7 @@ if __name__=="__main__":
             openai_model = openai_model_dict[model_select]
             print(f"Initialized Model Version {openai_model}")
             print("="*150)
-            print("Warning! Input \"clear\" to clear chat history. Remeber to use this command to save money if contextual information are currently unnecessary.")
+            print("Warning! Input \"clear\" to clear chat history. Remember to use this command to save money if contextual information is currently unnecessary.")
             print("="*150)
         except:
             raise NotImplementedError(f"Unsupported Choice {model_select}!")
